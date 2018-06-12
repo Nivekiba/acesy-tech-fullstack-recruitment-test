@@ -33,7 +33,7 @@ export default {
     created(){
         console.log("while creating")
         if(Parse.User.current()){
-            window.location.href="#/notes"
+            window.location.href="#/notes" 
             window.location.reload()
         }
     },
