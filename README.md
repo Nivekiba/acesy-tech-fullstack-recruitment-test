@@ -16,5 +16,5 @@
 Il faudra donc au prealable installer mongodb et renseigner le lien de la BD dans le fichier __parseserver/index.js__. Puis
 ```node parseserver/index.js```
 
-7. Lancer l'application dans un navigateur http://locahost:8000/notes
+7. Lancer l'application dans un navigateur [the app](http://locahost:8000/notes)
 8. Inscrivez-vous et creer vos notes
