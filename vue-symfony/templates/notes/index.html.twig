@@ -3,15 +3,8 @@
 {% block title %}Hello {{ controller_name }}!{% endblock %}
 
 {% block body %}
-<div class="container">
-    <div class="row py-5">
-        <div class="col col-8">
-            My notes
-            <notes></notes>
-        </div>
-        <div class="col col-4">
-            <add-note></add-note>
-        </div>
-    </div>
-</div>
+<keep-alive>
+    <router-view v-bind:notes="notes"></router-view>
+</keep-alive>
+
 {% endblock %}

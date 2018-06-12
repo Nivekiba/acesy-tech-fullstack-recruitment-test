@@ -1,0 +1,15 @@
+{
+  "name": "parseserver",
+  "version": "1.0.0",
+  "description": "Parse Server for mongodb communication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nivekiba",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "parse-server": "^2.8.2"
+  }
+}

@@ -9,42 +9,21 @@
         {% endblock %}
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
-                <div class="container">
-                    <a href="/" class="navbar-brand">
-                        <i class="fa fa-sticky-note"></i>
-                        &nbsp;&nbsp;ToDo List
-                    </a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item px-2">
-                                <a href="" class="nav-link active">
-                                    User Name
-                                </a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a href="" class="nav-link">
-                                    Deconnexion
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main role="main">
-            <div id="app">
-                {% block body %}{% endblock %}
+        <div id="app">
+            <div v-if="isconnec">
+                <my-head></my-head>
             </div>
-        </main>
-        {% block javascripts %}
-            <script src="{{ asset('bootstrap/js/jquery.min.js') }}"></script>
-            <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
-            <script src="{{ asset('build/js/app.js') }}"></script>
-        {% endblock %}
+            <main role="main">
+                <div v-if="t">
+                    {% block body %}{% endblock %}
+                </div>
+            </main>
+        </div>
+            {% block javascripts %}
+                <script src="{{ asset('bootstrap/js/popper.min.js') }}"></script>
+                <script src="{{ asset('bootstrap/js/jquery.min.js') }}"></script>
+                <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+                <script src="{{ asset('build/js/app.js') }}"></script>
+            {% endblock %}
     </body>
 </html>
