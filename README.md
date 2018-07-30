@@ -18,9 +18,3 @@ Il faudra donc au prealable installer mongodb et renseigner le lien de la BD dan
 
 7. Lancer l'application dans un navigateur [the app](http://locahost:8000/notes)
 8. Inscrivez-vous et creer vos notes
-
-| Header 1      |     2 header    |   header 3 |
-| ------------- |: -------------: | ---------: |
-| 1 Online      |        1        |      value |
-| Line 2        |        2        |      value |
-| 3 Online      |        3        |      value |
